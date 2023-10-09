@@ -1,0 +1,17 @@
+name = "amrutha " 
+fname = "sai kumar"
+mname = "eswari"
+study = "I am pursuing Degree"
+habits = "My hobbies are to dance and sing"
+interests = "I am interested to watch movies"
+favorite_color = "My favorite colour is lavender"
+# Printing personal self data
+print("Personal Self Data")
+print("------------------")
+print("amrutha", name)
+print("sai kumar", fname)
+print("eswari", mname)
+print("degree", study)
+print("dancing,singing", habits)
+print("watching movies", interests)
+print("lavender", favorite_color)
