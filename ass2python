@@ -1,0 +1,14 @@
+
+a = int(input("Enter the first number (a): "))
+b = int(input("Enter the second number (b): "))
+addition_result = a + b
+subtraction_result = a - b
+multiplication_result = a * b
+if b != 0:
+    division_result = a / b
+else:
+    division_result = "Division by zero is not allowed"
+print("Addition (a + b):", addition_result)
+print("Subtraction (a - b):", subtraction_result)
+print("Multiplication (a * b):", multiplication_result)
+print("Division (a / b):", division_result)
