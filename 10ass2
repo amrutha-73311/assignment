@@ -1,0 +1,4 @@
+
+n = int(input("Enter the number of hours: ")
+minutes = n * 60
+print(f"{n} hours is equal to {minutes} minutes.")
