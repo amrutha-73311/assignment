@@ -1,0 +1,10 @@
+
+    monthly_interest_rate = (annual_interest_rate / 12) / 100
+    simple_interest = (principal_amount * months * monthly_interest_rate)
+    emi = (simple_interest + principal_amount) / months
+    return emi
+principal_amount = float(input("Enter principal amount: "))
+annual_interest_rate = float(input("Enter annual interest rate (in percentage): "))
+months = int(input("Enter number of months: "))
+emi = calculate_emi(principal_amount, annual_interest_rate, months)
+print(f"Your Equated Monthly Installment (EMI) is: {emi:.2f}")
