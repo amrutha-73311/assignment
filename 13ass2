@@ -1,0 +1,35 @@
+DUSSHERA=60%,SUNDAY=50%
+kurti=550
+saree=1000
+plazo=300
+shirt=350
+kurtinos=int(input('enter the number of kurtis'))
+sareenos=int(input('enter the number of sarees'))
+plazonos=int(input('enter the number of plazos'))
+shirtnos=int(input('enter the number of shirts'))
+bill=(kurti*kurtinos)+(saree*sareenos)+(plazo*plazonos)+(shirt*shirtnos)
+print(bill)
+if pc=='DUSSHERA' or pc=='dusshera':
+    disc=bill*60/100
+elif pc=='SUNDAY' or pc=='sunday':
+    disc==bill*50/100
+elif bill>=3000:
+    disc=bill*30/100
+elif bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*15/100
+obill=tbill+gst
+print('customer name:',cname)
+print('customer phno:',cphno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('**Thank you!Visit Again**')
