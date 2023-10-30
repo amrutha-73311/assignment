@@ -1,0 +1,10 @@
+amount = int(input("Enter the amount: "))
+denominations = [500, 100, 50, 20, 10, 5, 2, 1]
+denomination_count = {}
+for denomination in denominations:
+    count = amount // denomination
+    if count > 0:
+        denomination_count[denomination] = count
+        amount %= denomination
+for denomination, count in denomination_count.items():
+    print(f"{denomination}:{count}")
