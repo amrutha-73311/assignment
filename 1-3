@@ -1,0 +1,13 @@
+n = int(input("Enter the number of values: "))
+my_list = []
+for i in range(n):
+    value = int(input("Enter a value: "))
+    my_list.append(value)
+
+if len(my_list) > 0:
+    max_value = max(my_list)
+    min_value = min(my_list)
+    difference = max_value - min_value
+    print("Maximum value:", max_value)
+    print("Minimum value:", min_value)
+    print("Difference:", difference)
