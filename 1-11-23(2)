@@ -1,0 +1,14 @@
+n = int(input("Enter the number of values: "))
+my_list = []
+for i in range(n):
+    value = int(input("Enter a value: "))
+    my_list.append(value)
+
+positions = int(input("Enter the number of positions to update: "))
+for _ in range(positions):
+    pos = int(input("Enter the position (0 to {}): ".format(n - 1))
+    if 0 <= pos < n:
+        new_value = int(input("Enter the new value: "))
+        my_list[pos] = new_value
+
+print("Updated list:", my_list)
