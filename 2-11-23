@@ -1,0 +1,10 @@
+def find_second_minimum(numbers):
+    if len(numbers) < 2:
+        return "List must contain at least two elements to find the second minimum."
+    min_value = min(numbers)
+    numbers = [x for x in numbers if x != min_value]
+    second_min_value = min(numbers)
+    return second_min_value
+numbers = [4, 7, 2, 9, 1, 5]
+second_min = find_second_minimum(numbers)
+print("The second minimum value in the list is:", second_min)
