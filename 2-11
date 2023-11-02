@@ -1,0 +1,4 @@
+
+numbers = [4, 7, 2, 9, 1, 5]
+min_value = min(numbers)
+print("The minimum value in the list is:", min_value)
