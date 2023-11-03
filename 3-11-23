@@ -1,0 +1,9 @@
+def merge_and_find_min(list1, list2):
+    merged_list = list1 + list2
+    min_value = min(merged_list)
+    return merged_list, min_value
+list1 = [3, 7, 1, 9]
+list2 = [5, 2, 8, 4]
+merged_list, min_value = merge_and_find_min(list1, list2)
+print("Merged List:", merged_list)
+print("Minimum Value:", min_value)
