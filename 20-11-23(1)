@@ -1,0 +1,16 @@
+def count_duplicates(lst):
+    count = 0
+    seen = set()
+    duplicates = set()
+    for num in lst:
+        if num not in seen:
+            seen.add(num)
+        else:
+            if num not in duplicates:
+                duplicates.add(num)
+                count += 1
+    return count
+n = int(input())
+arr = list(map(int, input().split()))
+result = count_duplicates(arr)
+print(result)
