@@ -1,0 +1,6 @@
+def duplicate_odd(numbers):
+    return [num if num % 2 == 0 else [num, num] for num in numbers]
+lst = list(map(int, input().split()))  # Input the list elements
+result = duplicate_odd(lst)
+flatten_result = [item for sublist in result for item in sublist]
+print(*flatten_result)
