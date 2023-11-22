@@ -1,0 +1,7 @@
+def separate_list(lst, index1, index2):
+    return lst[index1:index2 + 1]
+list1 = list(range(10))
+list2 = [1, 5, 6, 7, 8, 9, 10, 14, 78, 15]
+index1, index2 = 2, 6
+print("First part:", separate_list(list1, index1, index2))
+print("Second part:", separate_list(list2, index1, index2))
