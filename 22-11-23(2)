@@ -1,0 +1,5 @@
+def count_leap_years(start, end):
+    count = sum(1 for year in range(start, end + 1) if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0))
+    return count
+start_year, end_year = map(int, input("Enter start and end year separated by space: ").split())
+print("Number of leap years between", start_year, "and", end_year, "is:", count_leap_years(start_year, end_year))
