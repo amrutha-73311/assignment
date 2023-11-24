@@ -1,0 +1,52 @@
+def calculate_cgpa():
+    try:
+        sem1 = float(entry_sem1.get())
+        sem2 = float(entry_sem2.get())
+        sem3 = float(entry_sem3.get())
+        sem4 = float(entry_sem4.get())
+        sem5 = float(entry_sem5.get())
+        sem6 = float(entry_sem6.get())
+
+        total_cgpa = (sem1 + sem2 + sem3 + sem4 + sem5 + sem6) / 6.0
+
+        grade = ''
+        if total_cgpa == 10:
+            grade = 'O'
+        elif total_cgpa >= 9:
+            grade = 'A+'
+        elif total_cgpa >= 8:
+            grade = 'A'
+        elif total_cgpa >= 7:
+            grade = 'B'
+        elif total_cgpa >= 6:
+            grade = 'C'
+        elif total_cgpa >= 5:
+            grade = 'D'
+        elif total_cgpa >= 4:
+            grade = 'P'
+        else:
+            grade = 'F'
+
+        result_label.config(text=f"CGPA: {total_cgpa:.2f}\nResult: {grade}")
+    except ValueError:
+        result_label.config(text="Please enter valid marks")
+root = tk.Tk()
+root.title("Overall Grade Calculator")
+entry_sem1 = tk.Entry(root)
+entry_sem1.pack()
+entry_sem2 = tk.Entry(root)
+entry_sem2.pack()
+entry_sem3 = tk.Entry(root)
+entry_sem3.pack()
+entry_sem4 = tk.Entry(root)
+entry_sem4.pack()
+entry_sem5 = tk.Entry(root)
+entry_sem5.pack()
+entry_sem6 = tk.Entry(root)
+entry_sem6.pack()
+calculate_button = tk.Button(root, text="Calculate", command=calculate_cgpa)
+calculate_button.pack()
+result_label = tk.Label(root)
+result_label.pack()
+
+root.mainloop()
