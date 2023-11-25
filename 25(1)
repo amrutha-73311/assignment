@@ -1,0 +1,13 @@
+def sum_of_columns(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    column_sums = [0] * cols
+    for row in matrix:
+        for col, val in enumerate(row):
+            column_sums[col] += int(val)
+    return column_sums
+n = int(input())  
+matrix = []
+for _ in range(n):
+    row = input().split()
+    matrix.append(row)
