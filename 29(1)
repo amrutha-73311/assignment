@@ -1,0 +1,11 @@
+def alternate_case_conversion(s):
+    converted = ''
+    for i, char in enumerate(s):
+        if i % 2 == 0:
+            converted += char.lower()
+        else:
+            converted += char.upper()
+    return converted
+input_string = "AditYa"
+output_string = alternate_case_conversion(input_string)
+print(output_string)
