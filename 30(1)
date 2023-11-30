@@ -1,0 +1,12 @@
+def count_vowels(string):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+input_str = "hello"
+result = count_vowels(input_str)
+print(f"Input: {input_str}")
+print(f"Output: {result}")
