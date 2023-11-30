@@ -1,0 +1,18 @@
+def identify_file_format(filename):
+    extension = filename.split('.')[-1]
+    if extension == 'jpeg' or extension == 'jpg' or extension == 'png':
+        return 'photo document'
+    elif extension == 'doc' or extension == 'docx':
+        return 'word document'
+    elif extension == 'xls' or extension == 'xlsx':
+        return 'Excel document'
+    elif extension == 'ppt' or extension == 'pptx':
+        return 'powerpoint document'
+    else:
+        return 'invalid document'
+
+inputs = ["hi.jpeg", "hello.doc", "aditya.xls", "hi.ppt", "jj.dfd"]
+for filename in inputs:
+    result = identify_file_format(filename)
+    print(f"Input: {filename}")
+    print(f"Output: {result}\n")
